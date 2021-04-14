@@ -18,9 +18,6 @@ const app = (() => {
     const applyListeners = () => {
         menu.addEventListener('click', () => toggleClass(body, 'nav-active'));
         menuTitle.addEventListener('click', () => toggleClass(body, 'nav-active'));
-        setTimeout(function(){
-            menuItems.style.removeProperty('transition-delay')
-        }, 1000);
     }
 
     const toggleClass = (element, stringClass) => {
